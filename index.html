@@ -1,0 +1,261 @@
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Who is Oscar Duignan?</title>
+
+    <meta
+      name="description"
+      content="Bearded, bristol-based londoner, parent of Lumen and Ayla, partner of Kim, son of Daphne and John. Mostly found knocking around online as @oscarduignan"
+    />
+
+    <script>
+      (function() {
+        document.documentElement.classList.remove("no-js");
+        document.documentElement.classList.add("has-js");
+      })();
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    ></script>
+
+    <script>
+      (function() {
+        if (typeof WebFont !== "undefined") {
+          WebFont.load({
+            google: {
+              families: ["Nobile"]
+            }
+          });
+        } else {
+          // for some reason firefox dev edition on linux couldn't load webfont.js
+          // so I'm guessing it doesn't work in other browsers too. Here I just
+          // write the link tag via js manually.
+          var link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "https://fonts.googleapis.com/css?family=Nobile";
+          document.head.appendChild(link);
+          document.documentElement.className += " wf-inactive";
+        }
+      })();
+    </script>
+
+    <style type="text/css">
+      @font-face {
+        font-family: system;
+        font-style: normal;
+        font-weight: 300;
+        src: local(".SFNSText-Light"),
+          local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"),
+          local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"),
+          local("DroidSans"), local("Tahoma");
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 17.5px;
+        font-family: "Nobile", "system";
+        color: #333;
+        line-height: 1.5;
+      }
+
+      body {
+        opacity: 0;
+        margin: 0;
+      }
+
+      @media (min-width: 1000px) {
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+        }
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "title photo"
+          "intro intro"
+          "vcard vcard";
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+      }
+
+      @media (min-width: 1000px) {
+        .container {
+          grid-template-areas:
+            "photo title"
+            "photo intro"
+            "..... vcard";
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr;
+          min-height: initial;
+        }
+      }
+
+      .avatar {
+        grid-area: photo;
+        margin: 25px 25px 0 0;
+        max-width: 30vw;
+        align-self: end;
+        border-radius: 3px;
+      }
+
+      @media (min-width: 1000px) {
+        .avatar {
+          margin: 0 0 0 25px;
+          max-width: initial;
+        }
+      }
+
+      h1 {
+        grid-area: title;
+        align-self: end;
+        margin: 25px 25px 0 25px;
+        line-height: 1.2;
+        font-size: 24px;
+        margin-bottom: -8px;
+      }
+
+      summary {
+        grid-area: intro;
+        align-self: end;
+        margin: 25px 25px 35px 25px;
+      }
+
+      .vcard {
+        grid-area: vcard;
+        background-color: #eee;
+        border-radius: 3px;
+        padding: 25px;
+        line-height: 1.5;
+        justify-self: stretch;
+      }
+
+      @media (min-width: 1000px) {
+        .vcard {
+          width: 50%;
+          border-radius: 3px;
+        }
+      }
+
+      .vcard .email {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .flow {
+        --flow-space: 1rem;
+      }
+
+      .flow > * {
+        margin: 0;
+      }
+
+      .flow > * + * {
+        margin-top: 1rem;
+        margin-top: var(--flow-space);
+      }
+
+      body {
+        opacity: 0;
+      }
+
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+
+      summary {
+        max-width: 55ch;
+      }
+
+      @media (min-width: 400px) {
+        summary {
+          font-size: calc(
+            17.5px + (24 - 17.5) * (100vw - 400px) / (1400 - 400)
+          );
+        }
+      }
+
+      @media (min-width: 1400px) {
+        summary {
+          font-size: 24px;
+        }
+      }
+
+      .avatar {
+        display: block;
+      }
+
+      .wf-nobile-n4-active body,
+      .wf-inactive body {
+        opacity: 1;
+        transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+      }
+
+      .vcard {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      summary a:hover,
+      summary a:focus,
+      summary a:active {
+        background: blue;
+        color: white;
+        text-decoration: none;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="oscar-and-ayla-2018.png" alt="" class="avatar" />
+      <h1>Oscar Duignan</h1>
+      <summary>
+        Bearded, bristol-based londoner, parent of Lumen and Ayla, partner of
+        Kim, son of Daphne and John. Mostly found knocking around online as
+        <a href="https://github.com/oscarduignan" rel="me">@oscarduignan</a> or
+        in the exceptional case as
+        <a href="https://twitter.com/socialpoetry" rel="me">@socialpoetry</a> on
+        twitter.
+      </summary>
+      <div id="hcard-Oscar-Duignan" class="vcard">
+        <a
+          class="url fn"
+          style="display: none;"
+          href="https://www.oscarduignan.co.uk"
+          >Oscar Duignan</a
+        >
+        <div>
+          <a class="email" href="mailto:contact@oscarduignan.co.uk"
+            >contact@oscarduignan.co.uk</a
+          >
+        </div>
+        <div class="adr">
+          <span class="locality">Bristol</span>,
+          <span class="country-name">UK</span>
+        </div>
+        <div class="tel">+447946255593</div>
+      </div>
+    </div>
+  </body>
+</html>
