@@ -102,14 +102,31 @@
       .avatar {
         grid-area: photo;
         margin: 25px 25px 0 0;
-        max-width: 30vw;
         align-self: end;
+        width: 300px;
+        padding-bottom: calc(100% - 28px);
+        position: relative;
+        max-width: 30vw;
+      }
+
+      .avatar-image {
         border-radius: 3px;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
       }
 
       @media (min-width: 1000px) {
         .avatar {
           margin: 0 0 0 25px;
+        }
+
+        .avatar-image {
           max-width: initial;
         }
       }
@@ -228,7 +245,7 @@
   </head>
   <body>
     <div class="container">
-      <img src="oscar-and-ayla-2018.png" alt="" class="avatar" />
+      <div class="avatar"><img src="oscar-and-ayla-2018.png" alt="" class="avatar-image" /></div>
       <h1>Oscar Duignan</h1>
       <summary>
         Bearded, bristol-based londoner, parent of Lumen and Ayla, partner of
